@@ -56,7 +56,7 @@
 	"publisher": "createdforsbu",
 	"repository": {
 		"type": "git",
-		"url":""
+		"url":"https://github.com/XZJIsme/shutheblanksup"
 	},
 	"homepage": "https://marketplace.visualstudio.com/items?itemName=createdforsbu.shutheblanksup"
 }

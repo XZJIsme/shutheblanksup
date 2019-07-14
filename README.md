@@ -1,4 +1,7 @@
 # Shutheblanksup README
+
+https://marketplace.visualstudio.com/items?itemName=createdforsbu.shutheblanksup
+
 不太喜欢那么多空格的风格，因而写了这个蹩脚的小插件：
 
 Before:
