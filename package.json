@@ -1,0 +1,62 @@
+{
+	"name": "shutheblanksup",
+	"displayName": "Shutheblanksup(去除vscode默认c++格式化中的空格)",
+	"description": "去除vscode默认c++格式化中的空格(虽然似乎很多人喜欢这些空格 哈哈)",
+	"keywords": [
+		"格式化","无空格格式化","去除空格","C++格式化","删除空格","删去空格","第一次写插件，好多地方都很蹩脚"
+	],
+	"version": "20190714.1747.1",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Formatters","Other"
+	],
+	"icon": "images/02icon.png",
+	"activationEvents": [
+		"onCommand:extension.helloWorld"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.helloWorld",
+				"title": "Shutheblanksup ~ 嘿嘿 😊"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extension.helloWorld",
+					"when": "editorFocus",
+					"group": "1_modification"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js",
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "webpack --mode none",
+		"watch": "webpack --mode none --watch"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.0-next.0",
+		"webpack": "^4.35.3",
+		"webpack-cli": "^3.3.5"
+	},
+	"publisher": "createdforsbu",
+	"repository": {
+		"type": "git",
+		"url":""
+	},
+	"homepage": "https://marketplace.visualstudio.com/items?itemName=createdforsbu.shutheblanksup"
+}
