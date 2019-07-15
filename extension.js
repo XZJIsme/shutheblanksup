@@ -31,22 +31,24 @@ function activate(context) {
 			// vscode.window.showInformationMessage(''+str);
 			const end = new vscode.Position(vscode.window.activeTextEditor.document.lineCount + 1, 0);
 			var str_ = str;
-			while (1==1) {
+			while (1 == 1) {
 				str = str.replace(' <', '<').replace(' = ', '=').replace(' =', '=').replace('= ', '=');
 				str = str.replace(' (', '(').replace(' *', '*').replace('* ', '*').replace(' >', '>').replace('> ', '>');
 				str = str.replace(' %', '%').replace('% ', '%');
 				str = str.replace(' +', '+').replace('+ ', '+');
 				str = str.replace(' -', '-').replace('- ', '-');
-				str = str.replace(' /', '/').replace('/ ', '/');
+				// str = str.replace(' /', '/').replace('/ ', '/');
+				str = str.replace(' /', '/').replace(' / ','/');
 				str = str.replace(' >> ', '>>').replace('< ', '<');
 				str = str.replace(' ,', ',').replace(', ', ',');
-				str=str.replace('; ',';').replace(' ;',';');
-				str=str.replace(' :',':').replace(': ',':').replace(' : ',':');
-				str=str.replace(' & ','&').replace(' &','&').replace('& ','&');
-				str=str.replace(' && ','&&').replace(' || ','||').replace(' | ','|').replace(' |','|').replace('| ','|');
+				str = str.replace('; ', ';').replace(' ;', ';');
+				str = str.replace(' :', ':').replace(': ', ':').replace(' : ', ':');
+				str = str.replace(' & ', '&').replace(' &', '&').replace('& ', '&');
+				str = str.replace(' && ', '&&').replace(' || ', '||').replace(' | ', '|').replace(' |', '|').replace('| ', '|');
 				// str=str.replace('}\n\n','}\n');
-				if(str_!=str){
-					str_=str;
+				str=str.replace(')\n',')');
+				if (str_ != str) {
+					str_ = str;
 					continue;
 				}
 				else break;
