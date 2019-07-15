@@ -42,6 +42,9 @@ function activate(context) {
 				str = str.replace(' ,', ',').replace(', ', ',');
 				str=str.replace('; ',';').replace(' ;',';');
 				str=str.replace(' :',':').replace(': ',':').replace(' : ',':');
+				str=str.replace(' & ','&').replace(' &','&').replace('& ','&');
+				str=str.replace(' && ','&&').replace(' || ','||').replace(' | ','|').replace(' |','|').replace('| ','|');
+				// str=str.replace('}\n\n','}\n');
 				if(str_!=str){
 					str_=str;
 					continue;
