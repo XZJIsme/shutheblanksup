@@ -32,6 +32,7 @@ function activate(context) {
 			const end = new vscode.Position(vscode.window.activeTextEditor.document.lineCount + 1, 0);
 			var str_ = str;
 			while (1 == 1) {
+				str=str.replace(' ^','^').replace('^ ','^').replace(' ^ ','^');
 				str = str.replace(' <', '<').replace(' = ', '=').replace(' =', '=').replace('= ', '=');
 				str = str.replace(' (', '(').replace(' *', '*').replace('* ', '*').replace(' >', '>').replace('> ', '>');
 				str = str.replace(' %', '%').replace('% ', '%');
