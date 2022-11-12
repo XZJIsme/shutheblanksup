@@ -51,7 +51,7 @@
 		"typescript": "^3.3.1",
 		"vscode-test": "^1.0.0-next.0",
 		"webpack": "^4.35.3",
-		"webpack-cli": "^3.3.5"
+		"webpack-cli": "^3.3.12"
 	},
 	"publisher": "createdforsbu",
 	"repository": {
